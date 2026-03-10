@@ -12,6 +12,15 @@ interface StudentData {
 }
 
 const mockStudents: Record<string, StudentData> = {
+  '420423205002': {
+    rollNumber: '420423205002',
+    name: 'Rajesh Kumar Verma',
+    department: 'Computer Science & Engineering',
+    paymentStatus: 'Pending',
+    balance: 35000,
+    totalFees: 85000,
+    lastPayment: '2023-11-20',
+  },
   '2021CS001': {
     rollNumber: '2021CS001',
     name: 'Arun Kumar',
@@ -172,7 +181,7 @@ export default function FeePortal() {
         {!studentData && !error && (
           <div className="max-w-2xl mx-auto mt-12 text-center text-gray-500 dark:text-gray-400">
             <p className="text-lg">Enter a roll number to view fee details</p>
-            <p className="text-sm mt-2">Try: 2021CS001, 2021EC045, or 2021ME032</p>
+            <p className="text-sm mt-2">Try: 420423205002, 2021CS001, 2021EC045, or 2021ME032</p>
           </div>
         )}
       </div>
